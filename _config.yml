@@ -4,7 +4,7 @@ email: me@cameronhurd.com
 description: >
     An introduction to, and delineation between different methods of
     manipulating images in php.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/php-image-manipulation" # the subpath of your site, e.g. /blog
 url: "https://cameronhurd.com" # the base hostname & protocol for your site
 twitter_username: cameronhurd
 github_username:  cam5
