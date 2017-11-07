@@ -5,7 +5,7 @@ $leaf = new Imagick("./assets/images/leaf.jpg");
 // The "draw" object in IM.
 $caption = new ImagickDraw();
 
-// Set our "draw" object's attrs.
+// Set our "draw" objects attrs.
 $caption->setFillColor("white");
 $caption->setStrokeWidth(1.5);
 $caption->setStrokeColor("black");
