@@ -55,6 +55,15 @@ We might try something like the following, to start:
 
 ![A Leaf, with markup data.](./assets/images/modified/leaf_1.jpg)
 
+# Imagick
+
+{% highlight php %}{% include_relative snippets/watermarking_2.php %}{% endhighlight %}
+
+*./assets/images/modified/leaf_2.jpg*
+
+![A Leaf, with markup data.](./assets/images/modified/leaf_2.jpg)
+
+
 
 [gd]: https://en.wikipedia.org/wiki/GD_Graphics_Library
 [flickr-search]: https://www.flickr.com/search/?styles=depthoffield&media=photos&orientation=landscape&license=2%2C3%2C4%2C5%2C6%2C9&text=ontario&advanced=1
