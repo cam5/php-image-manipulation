@@ -17,7 +17,7 @@ $result = imagettftext(
     50,          // X coordinate.
     30,          // Y coordinate.
     imagecolorallocate($leaf, 255, 255, 255),
-                 // Creates ^^ white text specifically for this image.
+                 // ^ Creates white text for this image.
     $ttf,        // Font filepath.
     $attribution // The text.
 );
