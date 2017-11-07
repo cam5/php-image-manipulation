@@ -1,14 +1,17 @@
 <?php
 
 // Our dear leaf.
-$leaf = new \Imagick("./assets/images/leaf.jpg");
+$leaf = new Imagick("./assets/images/leaf.jpg");
 // The "draw" object in IM.
-$caption = new \ImagickDraw();
+$caption = new ImagickDraw();
 
-$caption->setFillColor('white');
+// Set our "draw" object's attrs.
+$caption->setFillColor("white");
+$caption->setStrokeWidth(1.5);
+$caption->setStrokeColor("black");
 $caption->setFontSize(40);
 $caption->setFont("Impact");
-$caption->annotation(50, 30, "WATERMARK");
+$caption->annotation(50, 80, "WATERMARKING...IS GOOD!");
 
 $leaf->drawImage($caption);
 
