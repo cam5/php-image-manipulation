@@ -5,9 +5,10 @@ $leaf = imagecreatefromjpeg("./assets/images/leaf.jpg");
 
 // The path to a truetype file.
 // @note - this is a very limiting factor of GD, imo!
-$ttf  = "./assets/fonts/Anonymous_Pro.ttf";
+$ttf = "./assets/fonts/Anonymous_Pro.ttf";
 
-$attribution = "\"Creative Commons A rainy day in the burbs of Ottawa.\" \r\nby Jamie McCaffrey is licensed under CC BY 2.0";
+$attribution = "\"Creative Commons A rainy day in the burbs of Ottawa.\"
+    \r\nby Jamie McCaffrey is licensed under CC BY 2.0";
 
 // Create our watermark.
 $result = imagettftext(

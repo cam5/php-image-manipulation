@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard">
+  <rule ref="PSR2">
+    <exclude name="PSR2.Methods.FunctionCallSignature.Indent"/>
+    <exclude name="PSR2.Files.EndFileNewline.TooMany"/>
+    <exclude name="PSR2.ControlStructures.SwitchDeclaration.defaultIndent"/>
+    <exclude name="PSR2.ControlStructures.SwitchDeclaration.caseIndent"/>
+    <exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakIndent"/>
+  </rule>
+
+  <rule ref="Squiz">
+    <exclude name="Squiz.Commenting.FileComment"/>
+    <exclude name="Squiz.PHP.CommentedOutCode"/>
+    <exclude name="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+    <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+    <exclude name="Squiz.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+    <exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
+    <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
+    <exclude name="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed"/>
+    <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
+    <exclude name="Squiz.Strings.ConcatenationSpacing.Missing"/>
+    <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
+    <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
+    <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/>
+    <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeOpen"/>
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterClose"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.NoSemicolon"/>
+    <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
+    <exclude name="Squiz.Files.FileExtension.ClassFound"/>
+    <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/>
+    <exclude name="Squiz.Arrays.ArrayDeclaration.KeyNotAligned"/>
+    <exclude name="Squiz.Classes.ClassDeclaration.EndFileAfterCloseBrace"/>
+    <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
+    <exclude name="Squiz.Commenting.FunctionComment.InvalidNoReturn"/>
+    <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+    <exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+    <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed"/>
+    <exclude name="Squiz.ControlStructures.SwitchDeclaration.CaseIndent"/>
+    <exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent"/>
+    <exclude name="Squiz.ControlStructures.SwitchDeclaration.DefaultIndent"/>
+    <exclude name="Squiz.ControlStructures.SwitchDeclaration.EmptyCase"/>
+    <exclude name="Squiz.Commenting.InlineComment.DocBlock"/>
+    <exclude name="Squiz.Commenting.BlockComment.WrongStart"/>
+    <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+    <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
+    <exclude name="Squiz.PHP.EmbeddedPhp.SpacingBeforeClose"/>
+    <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedBool"/>
+    <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
+    <exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+  </rule>
+
+  <!-- Demote some comment concerns to "warning" status -->
+  <rule ref="Squiz.Commenting.FunctionComment.Missing">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.VariableComment.Missing">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.ClassComment.Missing">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.ClassComment.ShortFullStop">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.VariableComment.MissingShort">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.VariableComment.SpacingBeforeTags">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.WhiteSpace.MemberVarSpacing.Incorrect">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.MissingShort">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.MissingReturn">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.SpacingAfterParams">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.ParamCommentNotCapital">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.ParamCommentFullStop">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.ShortFullStop">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.ClosingDeclarationComment.Missing">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.Commenting.FunctionComment.Missing">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="Squiz.PHP.DisallowMultipleAssignments.Found">
+    <type>warning</type>
+  </rule>
+
+  <rule ref="PSR2.Methods.FunctionCallSignature.Indent">
+    <type>warning</type>
+  </rule>
+
+  <!-- FALSE === $var -->
+  <rule ref="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue">
+    <type>warning</type>
+  </rule>
+</ruleset>
+
+
