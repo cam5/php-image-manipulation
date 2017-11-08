@@ -16,11 +16,12 @@ $expectedTextHeight = 80;
 
 $box   = new Box(100, 100);
 $point = new Point(
+    // Lets try and center it dynamically!
     (($img->getSize()->getWidth() / 2) - $expectedTextWidth),
-    ($img->getSize()->getHeight() / 2) - $expectedTextHeight
+    (($img->getSize()->getHeight() / 2) - $expectedTextHeight)
 );
 
-$font = $imagine->font("Impact", 100, $img->palette()->color("#fff", 100));
+$font = $imagine->font("Impact", 100, $palette->color("#fff", 100));
 
 $img->draw()->text("THIS IS ART", $font, $point);
 
